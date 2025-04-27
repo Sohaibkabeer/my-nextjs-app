@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Dashboard = () => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <div>
+      <h1 className="text-3xl">Dashboard</h1>
+      {children}
+    </div>
+  );
+};
 
-export default Dashboard
+export default Layout;
